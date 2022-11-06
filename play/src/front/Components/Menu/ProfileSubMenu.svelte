@@ -58,6 +58,11 @@
         enableCameraSceneVisibilityStore.showEnableCameraScene();
         gameManager.leaveGame(EnableCameraSceneName, new EnableCameraScene());
     }
+    //修正
+    function redirectToSignOutPage() {
+        disableMenuStores();
+        window.location.reload()
+    }
 </script>
 
 <div class="customize-main">
@@ -113,6 +118,23 @@
                 />
                 <span class="">{$LL.menu.profile.edit.camera()}</span>
             </button>
+
+            <button
+                type="button"
+                class="tw-w-full outline tw-min-w-[220px]"
+                on:click={redirectToSignOutPage}
+            >
+                <img
+                    draggable="false"
+                    src={btnProfileSubMenuCamera}
+                    alt={$LL.menu.profile.edit.signOut()}
+                    width="26px"
+                    height="26px"
+                    class="darken-icon"
+                />
+                <span class="">{$LL.menu.profile.edit.signOut()}</span>
+            </button>
+
             {#if ENABLE_OPENID}
                 {#if $userIsConnected}
                     <button

@@ -22,6 +22,7 @@ const menu: BaseTranslation = {
             woka: "キャラクターを変える",
             companion: "ペットを変える",
             camera: "カメラ・マイクを変える",
+            signOut: "ログアウトする",
         },
         login: "Sign in",
         logout: "Log out",
