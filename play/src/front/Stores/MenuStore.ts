@@ -67,20 +67,21 @@ export const inviteMenu: MenuItem = {
 export const inviteUserActivated = writable(true);
 
 function createSubMenusStore() {
+    //修正・メニューから非表示
     const { subscribe, update } = writable<MenuItem[]>([
         {
             type: "translated",
             key: SubMenusInterface.profile,
         },
-        {
-            type: "translated",
-            key: SubMenusInterface.settings,
-        },
-        {
-            type: "translated",
-            key: SubMenusInterface.aboutRoom,
-        },
-        inviteMenu,
+        // {
+        //     type: "translated",
+        //     key: SubMenusInterface.settings,
+        // },
+        // {
+        //     type: "translated",
+        //     key: SubMenusInterface.aboutRoom,
+        // },
+        // inviteMenu,
         {
             type: "translated",
             key: SubMenusInterface.globalMessages,
@@ -90,7 +91,7 @@ function createSubMenusStore() {
             key: SubMenusInterface.contact,
         },
     ]);
-
+    
     inviteUserActivated.subscribe((value) => {
         //update menu tab
         update((valuesSubMenusStore) => {
