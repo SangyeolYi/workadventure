@@ -44,8 +44,8 @@
         transition:fly={{ y: -200, duration: 500 }}
     >
         <div class="tw-flex tw-flex-col tw-items-center" style="width: 90%;">
-            <div class="logo"><img src={logo} alt="WorkAdventure" /></div>
-            <div class="icon"><img src={errorLogo} alt="Error logo" /></div>
+            <div class="logo"><img src={logo} alt="room-K 仮想拠点にようこそ" /></div>
+            <div class="icon"><img src={errorLogo} alt="" /></div>
             {#if $errorScreenStore.type !== "retry"}<h2>{$errorScreenStore.title}</h2>{/if}
             {#if $errorScreenStore.subtitle}<p>{$errorScreenStore.subtitle}</p>{/if}
             {#if $errorScreenStore.type !== "retry"}<p class="code">Code : {$errorScreenStore.code}</p>{/if}
