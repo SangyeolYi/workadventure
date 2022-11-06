@@ -18,10 +18,10 @@ const menu: BaseTranslation = {
     },
     profile: {
         edit: {
-            name: "Edit your name",
-            woka: "Edit your WOKA",
-            companion: "Edit your companion",
-            camera: "Edit your camera",
+            name: "名前を変える",
+            woka: "キャラクターを変える",
+            companion: "ペットを変える",
+            camera: "カメラ・マイクを変える",
         },
         login: "Sign in",
         logout: "Log out",
