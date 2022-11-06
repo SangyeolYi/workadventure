@@ -679,8 +679,8 @@
                     </div>
                 {/if}
             </div>
-
-            {#if $inviteUserActivated}
+            <!-- 修正 -->
+            <!-- {#if $inviteUserActivated}
                 <div
                     class="bottom-action-section tw-flex tw-flex-initial"
                     in:fly={{}}
@@ -696,7 +696,7 @@
                         {$LL.menu.sub.invite()}
                     </button>
                 </div>
-            {/if}
+            {/if} -->
 
             {#if ENABLE_OPENID && !$userIsConnected}
                 <div

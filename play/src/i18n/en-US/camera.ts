@@ -2,8 +2,8 @@ import type { BaseTranslation } from "../i18n-types";
 
 const camera: BaseTranslation = {
     enable: {
-        title: "Turn on your camera and microphone",
-        start: "Let's go!",
+        title: "カメラとマイクを選択してね",
+        start: "はじめよう〜!",
     },
     help: {
         title: "Camera / Microphone access needed",
