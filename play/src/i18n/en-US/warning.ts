@@ -5,17 +5,17 @@ const warning: BaseTranslation = {
     content: `This world is close to its limit!. You can upgrade its capacity <a href="{upgradeLink}" target="_blank">here</a>`,
     limit: "This world is close to its limit!",
     accessDenied: {
-        camera: "Camera access denied. Click here and check your browser permissions.",
-        screenSharing: "Screen sharing denied. Click here and check your browser permissions.",
-        teleport: "You have no right to teleport to this user.",
+        camera: "カメラの使用が拒否されました。ここをクリックしてカメラの使用を許可してください。",
+        screenSharing: "画面共有が拒否されました。ここをクリックして画面共有の使用を許可してください。",
+        teleport: "テレポートする権限がないみたいだよ",
         room: "Room access denied. You are not allowed to enter this room.",
     },
-    importantMessage: "Important message",
-    connectionLost: "Connection lost. Reconnecting...",
-    connectionLostTitle: "Connection lost",
-    connectionLostSubtitle: "Reconnecting",
-    waitingConnectionTitle: "Waiting for connection",
-    waitingConnectionSubtitle: "Connecting",
+    importantMessage: "大事なメッセージ",
+    connectionLost: "接続が切れました。接続を試します...",
+    connectionLostTitle: "接続が切れました",
+    connectionLostSubtitle: "接続をためしています...",
+    waitingConnectionTitle: "接続を待っています。",
+    waitingConnectionSubtitle: "接続中...",
 };
 
 export default warning;

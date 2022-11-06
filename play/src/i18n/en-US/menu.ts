@@ -1,7 +1,7 @@
 import type { BaseTranslation } from "../i18n-types";
 
 const menu: BaseTranslation = {
-    title: "Menu",
+    title: "メニュー",
     icon: {
         open: {
             menu: "Open menu",
@@ -113,9 +113,9 @@ const menu: BaseTranslation = {
         },
     },
     sub: {
-        profile: "Profile",
-        settings: "Settings",
-        invite: "Invite",
+        profile: "私の設定",
+        settings: "設定",
+        invite: "招待",
         credit: "Credit",
         globalMessages: "Global Messages",
         contact: "Contact",

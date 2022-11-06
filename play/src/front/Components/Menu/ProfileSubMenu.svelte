@@ -19,6 +19,8 @@
     import btnProfileSubMenuCamera from "../images/btn-menu-profile-camera.svg";
     import btnProfileSubMenuIdentity from "../images/btn-menu-profile-identity.svg";
     import btnProfileSubMenuCompanion from "../images/btn-menu-profile-companion.svg";
+    //修正
+    import btnProfileSubMenuSignOut from "../images/btn-menu-profile-signOut.png";
     import Woka from "../Woka/Woka.svelte";
     import Companion from "../Companion/Companion.svelte";
     import LL from "../../../i18n/i18n-svelte";
@@ -61,7 +63,7 @@
     //修正
     function redirectToSignOutPage() {
         disableMenuStores();
-        window.location.reload()
+        window.location.href="http://www.w3schools.com";
     }
 </script>
 
@@ -126,7 +128,7 @@
             >
                 <img
                     draggable="false"
-                    src={btnProfileSubMenuCamera}
+                    src={btnProfileSubMenuSignOut}
                     alt={$LL.menu.profile.edit.signOut()}
                     width="26px"
                     height="26px"

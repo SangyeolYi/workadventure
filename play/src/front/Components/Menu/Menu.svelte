@@ -73,22 +73,22 @@
                     activeComponent = ProfileSubMenu;
                     analyticsClient.menuProfile();
                     break;
-                case SubMenusInterface.settings:
-                    activeComponent = SettingsSubMenu;
-                    analyticsClient.menuSetting();
-                    break;
-                case SubMenusInterface.invite:
-                    activeComponent = GuestSubMenu;
-                    analyticsClient.menuInvite();
-                    break;
-                case SubMenusInterface.aboutRoom:
-                    activeComponent = AboutRoomSubMenu;
-                    analyticsClient.menuCredit();
-                    break;
-                case SubMenusInterface.contact:
-                    activeComponent = ContactSubMenu;
-                    analyticsClient.menuContact();
-                    break;
+                // case SubMenusInterface.settings:
+                //     activeComponent = SettingsSubMenu;
+                //     analyticsClient.menuSetting();
+                //     break;
+                // case SubMenusInterface.invite:
+                //     activeComponent = GuestSubMenu;
+                //     analyticsClient.menuInvite();
+                //     break;
+                // case SubMenusInterface.aboutRoom:
+                //     activeComponent = AboutRoomSubMenu;
+                //     analyticsClient.menuCredit();
+                //     break;
+                // case SubMenusInterface.contact:
+                //     activeComponent = ContactSubMenu;
+                //     analyticsClient.menuContact();
+                //     break;
                 case SubMenusInterface.globalMessages:
                     activeComponent = (await import("./GlobalMessagesSubMenu.svelte")).default;
                     analyticsClient.globalMessage();
