@@ -82,14 +82,14 @@ function createSubMenusStore() {
         //     key: SubMenusInterface.aboutRoom,
         // },
         // inviteMenu,
-        {
-            type: "translated",
-            key: SubMenusInterface.globalMessages,
-        },
-        {
-            type: "translated",
-            key: SubMenusInterface.contact,
-        },
+    // {
+        //     type: "translated",
+        //     key: SubMenusInterface.globalMessages,
+        // },
+        // {
+        //     type: "translated",
+        //     key: SubMenusInterface.contact,
+        // },
     ]);
     
     inviteUserActivated.subscribe((value) => {
